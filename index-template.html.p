@@ -33,6 +33,7 @@
         <body>
                 <div id="content" align="justified">
                 ◊(->html doc #:splice? #t)
+                ◊;(map (λ (post) (->html (post-to-index post))) reverse-post-list)
                 </div>
                 <div class="index-subscribe subscribe">
 <form

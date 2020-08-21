@@ -6,7 +6,8 @@
 	 pollen/decode 
 	 pollen/tag
          pollen/pagetree
-	 pollen/misc/tutorial 
+	 pollen/misc/tutorial
+         pollen/template/html
 	 txexpr
 	 hyphenate
 	 ;"search-doc.rkt"
@@ -83,8 +84,6 @@
   `(end 9608)) ;█ 9608
 
 
-(define (index-post date path title)
-  `(post (a ((href  ,path)) ,date ": " ,title)))
 
 
 
@@ -112,4 +111,14 @@
 
 (define post-list (list-tail (pagetree->list main-pagetree) 1))
 
-(define reverse-post-list (reverse post-list)) 
+(define reverse-post-list (reverse post-list))
+
+
+(define (index-post date path title)
+  `(post (a ((href  ,path)) ,date ": " ,title)))
+
+(define (post-to-index item)
+  `(post (a ((href ,(symbol->string item)))
+            ,(select-from-metas 'month-day item)
+            ": "
+            ,(select-from-metas 'title item))))
