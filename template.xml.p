@@ -1,3 +1,4 @@
+◊(require (file "indexing-defs.rkt"))
 <?xml version="1.0" encoding="utf-8"?>
     <feed xmlns="https://www.w3.org/2005/Atom">
 
