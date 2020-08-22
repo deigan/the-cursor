@@ -104,21 +104,33 @@
 
 
 
-(define pagetree-path
-  (build-path (current-project-root) "index.ptree"))
+;(define pagetree-path
+;  (build-path (current-project-root) "index.ptree"))
+;
+;(define main-pagetree (get-pagetree pagetree-path))
+;
+;(define post-list (list-tail (pagetree->list main-pagetree) 1))
+;
+;(define reverse-post-list (reverse post-list))
+;
+;
+;(define (index-post date path title)
+;  `(post (a ((href  ,path)) ,date ": " ,title)))
+;
+;(define (post-to-index item)
+;  `(post (a ((href ,(symbol->string item)))
+;            ,(select-from-metas 'month-day item)
+;            ": "
+;            ,(select-from-metas 'title item))))
 
-(define main-pagetree (get-pagetree pagetree-path))
+(define (posts-from-dir dir)
+  (map (λ (p) (string-trim p ".pm"))
+       (filter (λ (p)(string-suffix? p ".pm"))
+	       (map (λ (p) (path->string p)) (directory-list #:build? #t dir)))))
 
-(define post-list (list-tail (pagetree->list main-pagetree) 1))
+(define (date-sort posts)
+  (sort posts #:key post-date-rfc string<?))
 
-(define reverse-post-list (reverse post-list))
 
-
-(define (index-post date path title)
-  `(post (a ((href  ,path)) ,date ": " ,title)))
-
-(define (post-to-index item)
-  `(post (a ((href ,(symbol->string item)))
-            ,(select-from-metas 'month-day item)
-            ": "
-            ,(select-from-metas 'title item))))
+;(define 2020-ptree-list
+;  (date-sort (posts-from-dir "posts/2020")))
