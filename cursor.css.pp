@@ -70,7 +70,7 @@ post {
 	font-family: "Roboto Mono";
 	margin-top: 3.0rem;}
 
-.main { width: 60%;}
+.main { width: 65%;}
 
 .index-main { width: 70% }
 
@@ -131,8 +131,8 @@ end {
 
 .marginnote { float: right;
               clear: right;
-              margin-right: -60%;
-              width: 50%;
+              margin-right: -58%;
+              width: 48%;
               margin-top: 0;
               margin-bottom: 0;
 	      padding-right: 30px;
