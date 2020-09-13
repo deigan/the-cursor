@@ -137,7 +137,7 @@ end {
               margin-bottom: 0;
 	      padding-right: 30px;
               font-size: .70rem;
-              line-height: 1.3;
+              line-height: 1.5;
               vertical-align: baseline;
               position: relative; 
 }
@@ -299,7 +299,7 @@ html {
 /*Larger than Desktop HD */
 @media (min-width: 1800px) {
 html {
-  font-size: 1.4em
+  font-size: 1.6em
   }
 }
 
@@ -372,7 +372,7 @@ a {
 text-decoration: none;
     border-bottom: 1px solid #CBF8DF;
     box-shadow: inset 0px -7.5px 5px #CBF8DF;
-    background: white;
+    background: transparent;
     border-radius: 3px;
     padding-right: 2px;
     padding-left: 2px;
