@@ -9,9 +9,13 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 2rem;
+  ◊;margin-bottom: 2rem;
   font-family: "Roboto Mono", monospace;
 }
+
+h3 {
+  margin-top: 2rem;
+  }
 
 index-year {
   display: block;

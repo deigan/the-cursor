@@ -76,7 +76,7 @@
 
 (define (section #:at-start [start #f] . title)
   (cond
-    [(= (length title) 1) `(h2 ,@title)]
+    [(= (length title) 1) `(h3 ,@title)]
     [start ""]
     [else `(div [[class "intermission"]] "***" )])) ;ellipses 8230
 
