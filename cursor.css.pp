@@ -13,8 +13,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Mono", monospace;
 }
 
-h3 {
+h4 {
   margin-top: 2rem;
+  margin-bottom: -.75rem;
   }
 
 index-year {
@@ -89,10 +90,11 @@ post {
 }
 
 #post-title{
-	padding-top: 2.4rem;
-	font-weight: 500;
-	text-transform: uppercase;
-	text-shadow: 1px 1.5px;
+	font-size: 1.6em;
+	padding-top: 1.3em;
+	font-weight: bold;
+	◊;text-transform: uppercase;
+	◊;text-shadow: 1px 1.5px;
 	}
 
 #index-title{
@@ -375,7 +377,7 @@ a:hover {
 a {
 text-decoration: none;
     border-bottom: 1px solid #CBF8DF;
-    box-shadow: inset 0px -7.5px 5px #CBF8DF;
+    box-shadow: inset 0px -7.5px 0px #CBF8DF;
     background: transparent;
     border-radius: 3px;
     padding-right: 2px;
