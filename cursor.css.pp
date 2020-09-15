@@ -13,6 +13,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Mono", monospace;
 }
 
+sup {
+  vertical-align: top;
+  position: relative;
+  top: -.5em;
+}
+
 h4 {
   margin-top: 2rem;
   margin-bottom: -.75rem;
