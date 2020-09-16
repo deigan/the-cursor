@@ -13,6 +13,21 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Mono", monospace;
 }
 
+footer {
+	text-align: right;
+	}
+
+blockquote {
+	font-size: .95rem;
+	margin-inline-start: 10px;
+	margin-inline-end: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-style: dashed;
+	border-width: .1em;
+	border-color: black;
+}
+
 sup {
   vertical-align: top;
   position: relative;
