@@ -160,7 +160,7 @@ end {
               clear: right;
               margin-right: -58%;
               width: 48%;
-              margin-top: 0;
+              margin-top: .5rem;
               margin-bottom: 0;
 	      padding-right: 30px;
               font-size: .70rem;
@@ -168,6 +168,11 @@ end {
               vertical-align: baseline;
               position: relative; 
 }
+
+.marginlabel { font-size: .8rem;
+		line-height: 1;
+		top: -.4em;
+		}
 
 input.margin-toggle, label.margin-toggle { display: none; }
 
@@ -225,11 +230,11 @@ input.margin-toggle, label.margin-toggle { display: none; }
                 vertical-align: baseline;
                 position: relative; 
   }
-  .marginnote, .margin-note-indicator { 
+  .marginnote, .margin-note-indicator, .marginlabel { 
 	display: none; 
   }
   
-label.margin-toggle { 
+   label.margin-toggle { 
 		display: inline;
 		color: red; 
 		cursor: pointer;

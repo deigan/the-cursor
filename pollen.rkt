@@ -49,11 +49,17 @@
   `(i ,@elements))
 
 (define note-sym 11187)
-(define note-toggle-sym 11191) 	;⮷ 11191
+(define in-note-sym 11191)
+(define note-toggle-sym 11191)  ;⮷ 11191
 				;⮳ 11187  
+				;⮰ 11184
+				;⮱ 11185
+				;➩
+				;➪ 10154
 				; 8853  
 				;🖙 128409  
 				;⇢ 8674
+				;⇨ 8680
 
 
 (define (note . text)
@@ -61,7 +67,9 @@
     `(@ (span [[class "margin-note-indicator"]]  `(sup ,,note-sym))
 	    (label [[for ,refid] [class "margin-toggle"]] `(sup ,,note-toggle-sym))
             (input [[type "checkbox"] [id ,refid] [class "margin-toggle"]])
-            (span [[class "marginnote"]] ,@text)
+            (span [[class "marginnote"]]
+		  (sup [[class "marginlabel"]] ,in-note-sym) 
+ ,@text)
      )
 )
 
