@@ -18,11 +18,13 @@ footer {
 	}
 
 blockquote {
-	font-size: .95rem;
+	font-size: .9rem;
+	line-height: 1.5;
 	margin-inline-start: 10px;
 	margin-inline-end: 0;
-	padding-left: 20px;
-	padding-right: 20px;
+	◊;padding-left: 20px;
+	◊;padding-right: 20px;
+	padding: 3em;
 	border-style: dashed;
 	border-width: .1em;
 	border-color: black;
@@ -160,8 +162,8 @@ end {
               clear: right;
               margin-right: -58%;
               width: 48%;
-              margin-top: .5rem;
-              margin-bottom: 0;
+              margin-top: 0rem;
+              margin-bottom: .25rem;
 	      padding-right: 30px;
               font-size: .70rem;
               line-height: 1.5;
@@ -477,6 +479,7 @@ input[type=submit] {
 input[type=submit]:hover {
 	transition: background 500ms;
 	background-color: #54f979;
+	cursor: pointer;
 }
 
 .frequency {
