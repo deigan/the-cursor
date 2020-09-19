@@ -1,15 +1,7 @@
 #lang pollen
 
-◊(define background-color "gray")
-◊(define accent-color "blue")
-
-
-
-/* Typography
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  ◊;margin-bottom: 2rem;
   font-family: "Roboto Mono", monospace;
 }
 
@@ -22,8 +14,6 @@ blockquote {
 	line-height: 1.5;
 	margin-inline-start: 10px;
 	margin-inline-end: 0;
-	◊;padding-left: 20px;
-	◊;padding-right: 20px;
 	padding: 3em;
 	border-style: dashed;
 	border-width: .1em;
@@ -55,9 +45,6 @@ post {
   margin: 1rem;
   text-align: left;
   }
-
-/* Grid
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .container, .index-container {
   position: relative;
@@ -116,8 +103,6 @@ post {
 	font-size: 1.6em;
 	padding-top: 1.3em;
 	font-weight: bold;
-	◊;text-transform: uppercase;
-	◊;text-shadow: 1px 1.5px;
 	}
 
 #index-title{
@@ -125,8 +110,6 @@ post {
 	font-size: 2rem;
 	padding-top: 2.2rem;
 	font-weight: bold;
-	◊;text-transform: uppercase;
-	◊;text-shadow: 1px 1.5px;
 	}
 
 .intermission { 
@@ -276,8 +259,6 @@ margin: 1rem 15% 1rem 5%;
 
 
 
-/* Base Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 html {
   font-size: 1.5vw
@@ -318,7 +299,7 @@ html {
   }
 }
 
-/* Smaller than phablet (also point when grid becomes active) */
+/* Smaller than phablet  */
 @media screen and (max-width: 550px) {
 html {
   font-size: 4.5vw
@@ -340,8 +321,6 @@ html {
 
 
 
-/* Clearing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /* Self Clearing Goodness */
 .container:after,
@@ -386,23 +365,7 @@ html {
 	font-weight: 400;
 }
 
-/*
-a {
-  text-decoration: none;
-  color: black;
-  background: #b0ffc2;
-  transition: background 150ms ease;
-}
 
-a:visited {
-	color: black;
-	background: #e8e8e8;
-	}
-
-a:hover {
-	background: #54f979;
-	}
-	*/
 a {
 text-decoration: none;
     border-bottom: 1px solid #CBF8DF;
