@@ -124,8 +124,9 @@ post {
 	white-space: pre;
 	font-size: 2rem;
 	padding-top: 2.2rem;
-	text-transform: uppercase;
-	text-shadow: 1px 1.5px;
+	font-weight: bold;
+	◊;text-transform: uppercase;
+	◊;text-shadow: 1px 1.5px;
 	}
 
 .intermission { 
