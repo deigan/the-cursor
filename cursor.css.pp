@@ -367,7 +367,7 @@ html {
 
 @font-face {
 	font-family: "BitterPro";
-	src: url("https://mikedeigan.com/BitterPro/fonts/otf/BitterPro-Regular.otf")
+	src: url("../BitterPro/fonts/otf/BitterPro-Regular.otf")
 	}
 
 
