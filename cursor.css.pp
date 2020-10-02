@@ -157,7 +157,7 @@ end {
 
 .marginlabel { font-size: .8rem;
 		line-height: 1;
-		top: -.4em;
+		top: -.1em;
 		}
 
 input.margin-toggle, label.margin-toggle { display: none; }
