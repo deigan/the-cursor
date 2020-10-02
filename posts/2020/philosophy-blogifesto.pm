@@ -18,18 +18,19 @@ philosophy would be better with more of it on the web.
 Sure, the journals are already online, even if most
 are ludicrously
 paywalled.◊note{Props to the Open Access exceptions:
-◊link["https://www.philosophersimprint.org/"]{Phil Imprint}, 
-◊link["https://www.ergophiljournal.org/"]{Ergo},
-◊link["http://jesp.org/index.php/jesp/index"]{JESP},
-◊link["http://www.jpe.ox.ac.uk/"]{JPE},
-◊link["https://jmphil.org/"]{JMPhil},
-◊link["https://semprag.org/index.php/sp"]{S&P}, and
-◊link["https://philpapers.org/journals/pubs.pl?listId=14954&journals=1"]{others}!}
+◊link["https://www.philosophersimprint.org/" #:ext 1]{Phil Imprint}, 
+◊link["https://www.ergophiljournal.org/" #:ext 1]{Ergo},
+◊link["http://jesp.org/index.php/jesp/index" #:ext 1]{JESP},
+◊link["http://www.jpe.ox.ac.uk/" #:ext 1]{JPE},
+◊link["https://jmphil.org/" #:ext 1]{JMPhil},
+◊link["https://semprag.org/index.php/sp" #:ext 1]{S&P}, and
+◊link["https://philpapers.org/journals/pubs.pl?listId=14954&journals=1"
+#:ext 1]{others}!}
 	A lot of books are available online too, 
 		one way or another.
 And of course there are the wonderful EPs: the
-◊link["https://plato.stanford.edu/"]{SEP} and
-◊link["https://iep.utm.edu/"]{IEP}.
+◊link["https://plato.stanford.edu/" #:ext 1]{SEP} and
+◊link["https://iep.utm.edu/" #:ext 1]{IEP}.
 Reading all the great philosophy already online
 would take more time than anyone has. 
 
@@ -62,7 +63,7 @@ more personal than what typically gets into the academic
 journals.◊note{I'm not being original in 
  complaining about academic publishing in these
  ways. See Agnes Callard's 
-◊link["https://thepointmag.com/examined-life/publish-and-perish-agnes-callard/"]{recent article in ◊i{The Point}} for one recent
+◊link["https://thepointmag.com/examined-life/publish-and-perish-agnes-callard/" #:ext 1]{recent article in ◊i{The Point}} for one recent
 entry in the genre.
 I'm sympathetic to some of what she
 says there, but also think she underestimates the ambition,
@@ -148,13 +149,4 @@ the world worse. Given their profit models, I don't expect
 them to improve. So we should work towards better alternatives. 
 Blogging from my own website is my small contribution.
 ◊end{}
-
-◊;Twitter is bad, Facebook is worse. They are free only as
-◊;zoos are free for zebras. The real customers---advertisers---pay
-◊;plenty.
-
-◊;There should be more self-published
-◊;philosophy on the web, but ideally without distracting ads and
-◊;surveillance.
-
 
