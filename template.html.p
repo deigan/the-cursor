@@ -41,14 +41,14 @@
                 </div>
 
   <div class="navbar">
-                ◊when/splice[(previous here)]{
+                ◊when/splice[(and (previous here) (other-siblings here))]{
                        ◊when/splice[(member (previous here) (other-siblings here))]{
                     <span style="float: left"> <a href="../../◊(previous here)">←</a></span>
                 }}
                 ◊when/splice[(parent here)]{
                 <a href="../../◊|(parent here)|">↑</a> 
                 }
-                ◊when/splice[(parent here)]{
+                ◊when/splice[(next here)]{
                         ◊when/splice[(member (next here) (other-siblings here))]{
                     <span style="float: right"><a href="../../◊|(next here)|">→ </a></span>
                         }
