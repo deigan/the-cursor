@@ -49,7 +49,7 @@
   `(i ,@elements))
 
 (define note-sym 11187)
-(define in-note-sym 11191)
+(define in-note-sym 11185)
 (define note-toggle-sym 11191)  ;⮷ 11191
 				;⮳ 11187  
 				;⮰ 11184
