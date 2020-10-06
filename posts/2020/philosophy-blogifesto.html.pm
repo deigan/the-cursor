@@ -1,8 +1,8 @@
 #lang pollen
 
 ◊(define-meta title "A Philosophy Blogifesto")
-◊(define-meta date "2020-10-04")
-◊(define-meta month-day "10-04")
+◊(define-meta date "2020-10-06")
+◊(define-meta month-day "10-06")
 ◊(define-meta feed-date "2020-10-06T13:19:49-04:00")
 ◊(define-meta uuid "6107e504-124d-4f39-955a-cf70c0752afb")
 ◊(define-meta topics "philosophy online")
