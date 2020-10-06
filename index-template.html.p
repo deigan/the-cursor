@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>◊(select 'title metas)</title>
+<title>Deigan / ◊(select 'title metas)</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono" />
 <link rel="stylesheet" type="text/css" media="all" href="../../cursor.css" />
 </head>
