@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Deigan / ◊(select 'title metas)</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono" />
-<link rel="stylesheet" type="text/css" media="all" href="../../cursor.css" />
+<link rel="stylesheet" type="text/css" media="all" href="cursor.css" />
 </head>
 
 
