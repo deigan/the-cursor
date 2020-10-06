@@ -1,10 +1,10 @@
 #lang pollen
 
 ◊(define-meta title "A Philosophy Blogifesto")
-◊(define-meta date "2020-10-02")
-◊(define-meta month-day "10-02")
-◊(define-meta uuid "8e94180b-fff7-4c7b-b499-d1b76e46220c")
-◊(define-meta feed-date "2020-10-02T14:44:54-04:00")
+◊(define-meta date "2020-10-04")
+◊(define-meta month-day "10-04")
+◊(define-meta feed-date "2020-10-06T13:19:49-04:00")
+◊(define-meta uuid "6107e504-124d-4f39-955a-cf70c0752afb")
 ◊(define-meta topics "philosophy online")
 ◊(define-meta summary "The internet needs more philosophy blogs!")
 
@@ -34,16 +34,20 @@ And of course there are the wonderful EPs: the
 Reading all the great philosophy already online
 would take more time than anyone has. 
 
-But it can take years to get an idea out to readers in these
-professionally vetted forms, and to do so one needs to package
+But to get an idea out to readers in these professionally
+vetted forms, one needs to package 
 it in just the right way to satisfy---in the eyes
 of reviewers and editors---a variety of
 constraints:  concision, clarity,
 rigor, scholarliness,
 originality, 'relevance', and
- word limits.
+ word limits. Even when this works out, it can
+ take years. So if you want people to read your
+ stuff while it's still fresh, or if you want
+ to read what's at the cutting edge of some field,
+ you need to go somewhere else.
 
-Besides, many ideas that
+The delay isn't the only problem. Many ideas that
 people should  be able to read and discuss online
 simply are not publishable in these places: 
 the half-baked, the politically opinionated,
@@ -54,10 +58,10 @@ obscure place, etc.
 
 Finally, sometimes one just doesn't feel like reading stuff
 that has passed through this wringer, you know?
-Scholarliness, rigor, and the rest is
+Scholarliness, rigor, and the rest are
  important for certain purposes,
-but sometimes one just feels like getting
-some philosophy that's rougher, punchier,  sillier, smaller,
+but people also want to read  
+philosophy that's punchier, sillier, 
 grander, or
 more personal than what typically gets into the academic
 journals.◊note{I'm not being original in 
@@ -66,8 +70,8 @@ journals.◊note{I'm not being original in
 ◊link["https://thepointmag.com/examined-life/publish-and-perish-agnes-callard/" #:ext 1]{recent article in ◊i{The Point}} for one recent
 entry in the genre.
 I'm sympathetic to some of what she
-says there, but also think she underestimates the ambition,
-	quality, and depth of recent work relative 
+says there, but also think she underestimates the 
+	quality and depth of recent work relative 
 	to the older stuff.}
 
 
@@ -97,7 +101,7 @@ or first pass outlines, any style under the sun.
 Public philosophy, deep-in-the-arcane-weeds philosophy,
 and everything in between. 
 
-There's a lot of philosophy online in most of these forms too, but I wish
+There's a lot of philosophy online in most of these forms, but I wish
 there was more of it, from a wider range of philosophers.
 
 
@@ -112,10 +116,10 @@ Okay, sure, why not?
 
 This is my new philosophy blog. 
 
-I'd be happy if you too would start a philosophy blog (or whatever 
+I'd be happy if you, too,  would start a philosophy blog (or whatever 
 other kind of online philosophy thing).
 Tell me about it so I can check it out and maybe talk about it here.
-One thing I hope to regularly do here is talk about what's
+One thing I hope to do here is regularly talk about what's
 going on philosophy-wise elsewhere online. 
 
 
