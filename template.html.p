@@ -62,7 +62,7 @@
   onsubmit="window.open('https://buttondown.email/the-cursor', 'popupwindow')"
   class="embeddable-buttondown-form"
 >
-  <label for="bd-email">Want to get updates about new posts?</label>
+  <label for="bd-email">Want to get email updates about new posts?</label>
   <input type="email" name="email" id="bd-email" placeholder="your.name@whatever.com">
   <br>
   <span class="subscribe-buttons">
