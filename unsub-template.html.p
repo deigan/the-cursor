@@ -51,16 +51,7 @@
   <input type="email" name="email" id="bd-email" placeholder="your.name@whatever.com">
   <br>
   <span class="subscribe-buttons">
-  <span class="frequency">
-  <input type="radio" name="tag" value="Every post" checked>Every post
-  </span>
-  <span class="frequency">
-  <input type="radio" name="tag" value="Monthly">Monthly
-  </span>
-  <span class="frequency">
-  <input type="radio" name="tag" value="Yearly">Yearly
-  </span>
-  <input type="hidden" value="1" name="embed"/>
+    <input type="hidden" value="1" name="embed"/>
   <input type="submit" value="Subscribe" />
   </span>
 
