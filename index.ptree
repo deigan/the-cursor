@@ -3,5 +3,5 @@
 
 ◊index.html{
   ◊(for/splice ([p (date-sort (posts-from-dir "posts/2020"))]) p)
+  ◊(for/splice ([p (date-sort (posts-from-dir "posts/2021"))]) p)
 }
-

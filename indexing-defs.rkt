@@ -2,7 +2,8 @@
 
 (require pollen/core
          pollen/pagetree
-         pollen/setup)
+         pollen/setup
+         racket/string)
 
 (provide (all-defined-out))
 
@@ -21,4 +22,6 @@
             ": "
             ,(select-from-metas 'title item))))
 
+(define (posts-from-year year)
+  (filter (lambda (p) (string-prefix? (symbol->string p) (string-append "posts/" (number->string year)))) reverse-post-list))
 
