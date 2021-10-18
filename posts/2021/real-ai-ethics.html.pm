@@ -62,7 +62,7 @@ To think otherwise would be to let sci-fi obscure reality.
 
 Views like Crane's are common,◊note{For instance, in the current 
 NYRB issue (paywalled, sorry),
-◊link["https://www.nybooks.com/articles/2021/10/21/human-costs-artificial-intelligence/"]{Sue Halpen dismisses}
+◊link["https://www.nybooks.com/articles/2021/10/21/human-costs-artificial-intelligence/"]{Sue Halpern dismisses}
 the fear that
 "AI systems will acquire human-level intelligence and eventually
 outwit us" on the grounds that
@@ -89,7 +89,7 @@ the machine learning researchers' answering
 ◊link["https://www.jair.org/index.php/jair/article/view/11222"]{this
 survey}. Though see  
 ◊link["https://www.cold-takes.com/where-ai-forecasting-stands-today/"]{Holden Karnofsky's 
-blogpost} for some reasons to be skeptical about such
+blog post} for some reasons to be skeptical about such
 surveys. But also see
 ◊link["https://www.cold-takes.com/forecasting-transformative-ai-the-biological-anchors-method-in-a-nutshell/"]{his}
 ◊link["https://www.cold-takes.com/forecasting-transformative-ai-whats-the-burden-of-proof/"]{other}
@@ -111,7 +111,7 @@ to think that crucial feature will remain
 
 Take a look at what
 ◊link["https://deepmind.com/blog/article/muzero-mastering-go-chess-shogi-and-atari-without-rules"]{DeepMind}◊note{Here is Halpern:
-"AlphaGo can best the most accomplished Go player in the world, but it can’t play chess, let alone write music or drive a car. Machine learning systems, moreover, are trained on datasets that are, by definition, limited. (If they weren’t, they would not be data◊em{sets}.)" 
+"AlphaGo can best the most accomplished Go player in the world, but it can’t play chess, let alone write music or drive a car. Machine learning systems, moreover, are trained on datasets that are, by definition, limited. (If they weren't, they would not be data◊em{sets}.)" 
 I guess she didn't check what AlphaGo's successors 
 do. AlphaZero (2017)
 not only mastered Go but also chess (and shogi)
