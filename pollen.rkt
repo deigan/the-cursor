@@ -41,6 +41,9 @@
 (define (lead-in . elements)
   `(span [[class "lead-in"]] ,@elements))
 
+(define (sc . elements)
+  `(span [[style "font-variant: small-caps"]] ,@elements))
+
 (define (emph . elements)
   `(i ,@elements))
 
