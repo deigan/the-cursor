@@ -16,12 +16,12 @@
 (provide (all-defined-out))
 
 (define (root . elements)
-  (hyphenate (txexpr 'root empty (decode-elements elements
+    (txexpr 'root empty (decode-elements elements
 		     #:txexpr-elements-proc decode-double-breaks-into-paras
-		     #:string-proc (compose smart-quotes smart-dashes)
+		     #:string-proc (compose hyphenate smart-quotes smart-dashes)
+		     #:exclude-tags '(script)
 		     		 )
 		)
-  )
 )
 
 (define (decode-double-breaks-into-paras elements)
