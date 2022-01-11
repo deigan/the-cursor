@@ -20,6 +20,79 @@ blockquote {
 	border-color: black;
 }
 
+.sketch-container {
+	text-align: left;
+  font-family: "Roboto Mono", monospace;
+  line-height: 1.5;
+	font-size: .9rem;
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 25rem;
+}
+
+.p5Canvas {
+	border-style: solid;
+	border-width: .1em;
+}
+
+.sketch-button {
+  font-family: "Roboto Mono", monospace;
+	font-size: .9rem;
+	font-weight: bold;
+	width: 30%;
+	margin-right: .25rem;
+	background-color: white;
+	border-style: solid;
+	border-color: black;
+	border-width: .1em;
+	transition: background 500ms;
+	}
+
+.sketch-button:hover {
+	background-color: #CBF8DF;
+	cursor: pointer;
+}
+
+.sketch-buttons {
+  font-family: "Roboto Mono", monospace;
+	font-size: .9rem;
+	font-weight: bold;
+	margin-top: .5rem;
+	margin-bottom: .25rem;
+	display: flex;
+	width: 100%;
+	height: 2rem;
+	line-height: 2rem;
+	}
+
+.strat-choice {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.strat-label {
+}
+
+input {
+	font-style: italic;
+	font-weight: bold;
+	flex-grow: 1.75;
+	font-size: .9rem;
+	background-color: #CBF8DF;
+	border-style: solid;
+	border-color: black;
+	border-width: thin;
+	transition: background 500ms;
+}	
+
+input[type=button]:hover {
+	transition: background 500ms;
+	background-color: #54f979;
+	cursor: pointer;
+}
+
 sup {
   vertical-align: top;
   position: relative;
@@ -497,4 +570,43 @@ post a:hover {
 	font-weight: 600;
 	}
 
+h1 {
+  color: #fff;
+  margin-bottom: 60px;
+  font-family: helvetica;
+  font-size: 56px;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+/*
+.slider {
+  -webkit-appearance: none;
+  height: 2rem;
+  background: #CBF8DF;
+  outline: none;
+  content: "TEST";
+}
+
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  content: "TEST";
+  appearance: none;
+  width: 20px;
+  height: 2rem;
+  background: #000;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 2rem;
+  background: #000;
+  cursor: pointer;
+  border: 5px solid lawngreen;
+  border-radius: 4px;
+}
+ */
 
