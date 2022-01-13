@@ -317,9 +317,36 @@ const srSim = (s, withCharts, sLearning, rLearning, showMessages, allStrats, wit
 	  	    s.fill(20)
 	            chartSmallFormat()
 	  	    s.text(this.stratLabel(st), this.chartPos.x+xOffset+.5*bWidth, chartBottom+.007*s.width)
-	  	     s.textAlign(s.CENTER,s.BOTTOM)
-	  	    s.text(sAmount, this.chartPos.x+xOffset+.5*bWidth, chartBottom-bHeight)
 
+			  // No support for unicode arrows on mobile...
+			  // so we draw them by hand lol
+			  s.strokeWeight(1)
+			  s.stroke(0)
+			  let rx = this.chartPos.x+xOffset+.5*bWidth+.0065*s.width
+			  let ry = chartBottom+.01875*s.width
+	 	    	  s.line(rx-.0125*s.width, ry, rx, ry)
+			  s.beginShape()
+			  s.vertex(rx-2, ry-2)
+			  s.vertex(rx-2, ry+2)
+			  s.vertex(rx,ry)
+			  s.endShape()
+
+			  ry += .03*s.width;
+			  s.line(rx-.0125*s.width, ry, rx, ry)
+			  s.beginShape()
+			  s.vertex(rx-2, ry-2)
+			  s.vertex(rx-2, ry+2)
+			  s.vertex(rx,ry)
+			  s.endShape()
+
+
+	            chartSmallFormat()
+		lightStroke();
+
+		  	s.textAlign(s.CENTER,s.BOTTOM)
+	  	    	s.text(sAmount, this.chartPos.x+xOffset+.5*bWidth, chartBottom-bHeight)
+
+			
 		    xOffset += bWidth+cu;
 	  	  }
 	  	}
@@ -338,15 +365,15 @@ const srSim = (s, withCharts, sLearning, rLearning, showMessages, allStrats, wit
 	  let firstLine = ''
 	  let secondLine = ''
 	  if (strat.get(0) === 0) {
-	    firstLine = 'L🡒0';
+	    firstLine = 'L 0';
 	  } else {
-	    firstLine = 'L🡒1';
+	    firstLine = 'L 1';
 	  }
 	  
 	  if (strat.get(1) === 0) {
-	    secondLine = 'R🡒0';
+	    secondLine = 'R 0';
 	  } else {
-	    secondLine = 'R🡒1'
+	    secondLine = 'R 1'
 	  }
 	  
 	  return firstLine.concat('\n').concat(secondLine)
@@ -385,15 +412,15 @@ class Receiver extends Agent {
   let firstLine = ''
   let secondLine = ''
   if (strat.get(0) === 0) {
-    firstLine = '0🡒L';
+    firstLine = '0 L';
   } else {
-    firstLine = '0🡒R';
+    firstLine = '0 R';
   }
   
   if (strat.get(1) === 0) {
-    secondLine = '1🡒L';
+    secondLine = '1 L';
   } else {
-    secondLine = '1🡒R'
+    secondLine = '1 R'
   }
   
   return firstLine.concat('\n').concat(secondLine)
@@ -620,14 +647,11 @@ class Goal {
 		     sX += sInc*sOff;
 		   }
 		   s.noFill();
-		   // s.strokeWeight(2)
 		   s.endShape();
 		   s.fill(0);
-//		   s.stroke(0,5) 
 		   chartSmallFormat()
 		   s.text(rounds, sX, sY+chartHeight+.01*s.width)
 		   s.stroke(0,50) 
-//		   s.line(sX,s.height-.275*s.height, sX, s.height-.075*s.height)
 		 
 		   s.strokeWeight(1)
 		   s.stroke(0)
@@ -639,6 +663,7 @@ class Goal {
 
 	function lightStroke() {
 		   s.stroke(0,50) 
+		   s.strokeWeight(2)
 	}
 
 	function chartTitleFormat() {

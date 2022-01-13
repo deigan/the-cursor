@@ -1,6 +1,8 @@
 #lang pollen
 
 ◊(define-meta title "Some Skyrmsian Signalling Simulations: Reinforcement Learning")
+◊(define-meta topics "philosophy")
+◊(define-meta summary "A recounting of Skyrms's solution to a puzzle about meaning, with simulations runnable in the browser.")
 ◊(define-meta feed-date "2022-01-11T22:12:54+01:00")
 ◊(define-meta uuid "c8ce8350-99e4-4f84-b03c-1aaf2e081ece")
 ◊(define-meta published "2022-01-11")
@@ -12,7 +14,25 @@
 ◊(define rchar "Reese")
 ◊(define dest "Callias's house")
 ◊(define (strat . elements)
-	`(span [[style "font-family: 'Roboto Mono'; font-weight: bold"]] ,@elements))
+	`(span [[style "font-family: 'Roboto Mono'; font-weight: bold"]] ,@elements)
+)
+
+◊(define (◊r-arrow . elements)
+  `(svg [
+	 [viewBox "-10 50 250 350"]
+	 [width ".8rem"]
+	 [style "vertical-align: baseline;
+		position: relative;
+		top: 0.1rem"]]
+  (path  [[x "0"]
+	  [y "0"]
+	  [preserveAspectRatio "xMidYMin meet"] 
+	  [d 
+	  "M229.2188 261 L133.0312 316.5469 L133.0312 274.9219 L21.0938 274.9219 L21.0938 247.0781 L133.0312 247.0781 L133.0312 205.4531 L229.2188 261 Z"
+		]])
+   )
+)
+
 
 ◊(script #:src "lib/p5.js")
 ◊(script #:src "lib/sender-receiver.js")
@@ -172,7 +192,7 @@ In other words, for S's messages to function as signals,
 both S and R need to pick reasonable ◊emph{strategies} about
 how to act and stick to them.
 
-For example, if S uses the ◊strat{[L🡒0, R🡒1]} strategy, then it will 
+For example, if S uses the ◊strat{[L◊r-arrow{}0,R◊r-arrow{}1]} strategy, then it will 
 send a '◊strat{0}' whenever the goal is on the left,
 	and a '◊strat{1}' whenever the goal
 is on the right. If R is using the strategy that matches,
@@ -181,7 +201,7 @@ they'll succeed every time.
 But there's nothing about a '◊strat{0}' that makes it intrinsically
 well suited to mean left and nothing about '◊strat{1}' that makes it
 intrinsically well suited to mean right. S could just as 
-well use the ◊strat{[L🡒1, R🡒0]} strategy instead. And if R's strategy
+well use the ◊strat{[L◊r-arrow{}1,R◊r-arrow{}0]} strategy instead. And if R's strategy
 matches, they will also succeed.◊note{And notice that if you pick
 the anti-matched strategy, they will do much worse than 50%. This
 is a good reminder that S and R here are extremely simple and
@@ -201,12 +221,12 @@ is used for left and which is used for right.
 ◊div[#:style "display: flex; justify-content: space-evenly;"]{
 ◊form[#:class "strat-choice"]{S Strategy
 ◊label[#:class "strat-label"]{◊input[#:type "radio" #:name "ss" #:checked "" #:onclick "sSet(sr_Given,'random')"]{}[Random]}
-◊label[#:class "strat-label"]{◊input[#:type "radio" #:name "ss" #:onclick "sSet(sr_Given,'L🡒0, R🡒1')"]{[L🡒0, R🡒1]}}
-◊label[#:class "strat-label"]{◊input[#:type "radio" #:name "ss" #:onclick "sSet(sr_Given,'L🡒1, R🡒0')"]{[L🡒1, R🡒0]}}}
+◊label[#:class "strat-label"]{◊input[#:type "radio" #:name "ss" #:onclick "sSet(sr_Given,'L🡒0, R🡒1')"]{[L◊r-arrow{}0,R◊r-arrow{}1]}}
+◊label[#:class "strat-label"]{◊input[#:type "radio" #:name "ss" #:onclick "sSet(sr_Given,'L🡒1, R🡒0')"]{[L◊r-arrow{}1,R◊r-arrow{}0]}}}
 ◊form[#:class "strat-choice"]{R Strategy
 ◊label[#:class "strat-label"]{◊input[#:type "radio" #:name "ss" #:checked "" #:onclick "rSet(sr_Given,'random')"]{}[Random]}
-◊label[#:class "strat-label"]{◊input[#:type "radio" #:name "ss" #:onclick "rSet(sr_Given,'0🡒L, 1🡒R')"]{[0🡒L, 1🡒R]}}
-◊label[#:class "strat-label"]{◊input[#:type "radio" #:name "ss" #:onclick "rSet(sr_Given,'1🡒L, 0🡒R')"]{[1🡒L, 0🡒R]}}}
+◊label[#:class "strat-label"]{◊input[#:type "radio" #:name "ss" #:onclick "rSet(sr_Given,'0🡒L, 1🡒R')"]{[0◊r-arrow{}L,1◊r-arrow{}R]}}
+◊label[#:class "strat-label"]{◊input[#:type "radio" #:name "ss" #:onclick "rSet(sr_Given,'1🡒L, 0🡒R')"]{[1◊r-arrow{}L,0◊r-arrow{}R]}}}
 }
 }
 
@@ -284,8 +304,8 @@ a setup as simple as ours:
 ◊div[#:style "display: flex; justify-content: space-evenly;"]{
 ◊form[#:class "strat-choice"]{S Strategy
 ◊label{◊input[#:type "radio" #:name "ss" #:checked "" #:onclick "sSet(sr_rLearn,'random')"]{}[Random]}
-◊label{◊input[#:type "radio" #:name "ss" #:onclick "sSet(sr_rLearn,'L🡒0, R🡒1')"]{[L🡒0, R🡒1]}}
-◊label{◊input[#:type "radio" #:name "ss" #:onclick "sSet(sr_rLearn,'L🡒1, R🡒0')"]{[L🡒1, R🡒0]}}}
+◊label{◊input[#:type "radio" #:name "ss" #:onclick "sSet(sr_rLearn,'L🡒0, R🡒1')"]{[L◊r-arrow{}0,R◊r-arrow{}1]}}
+◊label{◊input[#:type "radio" #:name "ss" #:onclick "sSet(sr_rLearn,'L🡒1, R🡒0')"]{[L◊r-arrow{}1,R◊r-arrow{}0]}}}
 }
 }
 
@@ -316,8 +336,8 @@ R makes it to the goal.
 ◊div[#:style "display: flex; justify-content: space-evenly;"]{
 ◊form[#:class "strat-choice"]{R Strategy
 ◊label{◊input[#:type "radio" #:name "ss" #:checked "" #:onclick "rSet(sr_sLearn,'random')"]{}[Random]}
-◊label{◊input[#:type "radio" #:name "ss" #:onclick "rSet(sr_sLearn,'0🡒L, 1🡒R')"]{[0🡒L, 1🡒R]}}
-◊label{◊input[#:type "radio" #:name "ss" #:onclick "rSet(sr_sLearn,'1🡒L, 0🡒R')"]{[1🡒L, 0🡒R]}}}
+◊label{◊input[#:type "radio" #:name "ss" #:onclick "rSet(sr_sLearn,'0🡒L, 1🡒R')"]{[0◊r-arrow{}L,1◊r-arrow{}R]}}
+◊label{◊input[#:type "radio" #:name "ss" #:onclick "rSet(sr_sLearn,'1🡒L, 0🡒R')"]{[1◊r-arrow{}L,0◊r-arrow{}R]}}}
 }
 }
 
@@ -362,7 +382,7 @@ How can it do so?
 
 At the beginning S and R have a 50% of success per round.
 Soon enough,
-a pair of strategies will happen to work by luck. Maybe the goal was on the left, S picked ◊strat{[L🡒0, R🡒1]}, and R picked ◊strat{[0🡒L, 1🡒R]}.
+a pair of strategies will happen to work by luck. Maybe the goal was on the left, S picked ◊strat{[L◊r-arrow{}0,R◊r-arrow{}1]}, and R picked ◊strat{[0◊r-arrow{}L,1◊r-arrow{}R]}.
 
 Through reinforcement, S and R will be more likely to use those strategies in the future. They might sometimes get lucky with the other
 strategy pair as well, evening the 
@@ -398,7 +418,7 @@ approach still works.
 Consider, for example, these strategies that S and R
 are sampling from. We've limited them to two each, the two
 that are sensible for signalling. We haven't, for example,
-included the strategy ◊strat{[L🡒0, R🡒0]} for S or ◊strat{[0🡒L, 1🡒L]} for
+included the strategy ◊strat{[L◊r-arrow{}0,R◊r-arrow{}0]} for S or ◊strat{[0◊r-arrow{}L,1◊r-arrow{}L]} for
 R.◊note{Quick
 exercise: why would these strategies be bad ones for signalling?}
 
